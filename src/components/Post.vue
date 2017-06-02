@@ -1,6 +1,12 @@
 
 <template>
-    <section class="post">
+    <div class="loader" v-if="loading" v-cloak>
+        <svg class="loader--icon">
+            <loader fill="#1d1d1d"/>
+        </svg>
+        Loading...
+    </div>
+    <section class="post" v-else>
         <time class="post__date">
             {{ parseDate(post.post_date) }}
         </time>
@@ -13,18 +19,30 @@
 
 <script>
     import Backend from '../../config/backend'
+    import loader from '../assets/loader.svg'
 
     export default {
         data() {
             return {
-                post: false
+                post: false,
+                loading: false
             }
+        },
+        components: {
+            loader
         },
         methods: {
             getPost() {
-                this.$http.get(`${Backend()}/wp-json/headless/v1/post-by-url${this.$route.path}`)
+                this.$http.get(`${Backend()}/wp-json/headless/v1/post-by-url${this.$route.path}`, {
+                    before: () => {
+                        this.loading = true;
+                    }
+                })
                     .then(response => {
                         this.post = response.body;
+                    })
+                    .then(() => {
+                        this.loading = false;
                     });
             },
             parseDate(date) {
@@ -113,5 +131,35 @@
                 background: #eee;
             }
         }
+    }
+
+    .loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--icon {
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: 50px;
+        }
+    }
+
+    .loader-svg { 
+        opacity: 0; 
+        animation: hideShow 1s ease infinite; 
+    } 
+    
+    @keyframes hideShow { 
+        0% { 
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        } 
+        100% {
+            opacity: 0;
+        } 
     }
 </style>

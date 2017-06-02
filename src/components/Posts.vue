@@ -1,6 +1,12 @@
 <template>
     <section class="posts">
-        <ul class="post-list">
+        <div class="loader" v-if="loading" v-cloak>
+            <svg class="loader--icon">
+                <loader fill="#1d1d1d"/>
+            </svg>
+            Loading...
+        </div>
+        <ul class="post-list" v-else>
             <li class="post-list__item" v-for="post in posts">
                 <router-link :to="cutUrl(post.link)" class="post-list__link">
                     <time class="post-list__date">
@@ -16,19 +22,31 @@
 
 <script>
     import Backend from '../../config/backend'
+    import loader from '../assets/loader.svg'
 
     export default {
         name: 'Posts',
+        components: {
+            loader
+        },
         data() {
             return {
-                posts: []
+                posts: [],
+                loading: false,
             }
         },
         methods: {
             getPosts() {
-                this.$http.get(`${Backend()}/wp-json/wp/v2/posts`)
+                this.$http.get(`${Backend()}/wp-json/wp/v2/posts`, {
+                    before: () => {
+                        this.loading = true;
+                    }
+                })
                     .then(response => {
                         this.posts = response.body;
+                    })
+                    .then(() => {
+                        this.loading = false;
                     });
             },
             cutUrl(url) {
@@ -63,6 +81,36 @@
         width: 90%;
         max-width: 1000px;
         margin: auto;
+    }
+
+    .loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--icon {
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: 50px;
+        }
+    }
+
+    .loader-svg { 
+        opacity: 0; 
+        animation: hideShow 1s ease infinite; 
+    } 
+    
+    @keyframes hideShow { 
+        0% { 
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        } 
+        100% {
+            opacity: 0;
+        } 
     }
 
     .post-list {
