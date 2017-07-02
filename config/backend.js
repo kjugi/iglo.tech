@@ -1,3 +1,3 @@
 module.exports = function() {
-    return 'http://snowdog.dev'
+    return 'https://iglo.tech'
 }

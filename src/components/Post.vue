@@ -2,18 +2,16 @@
 <template>
     <section class="post container">
         <time class="post__date">
-            {{ parseDate(post.post_date) }}
+            {{ parseDate(post.date) }}
         </time>
         <h1 class="post__heading">
-            {{ post.post_title }}
+            {{ post.title }}
         </h1>
-        <article class="post__content" v-html="post.post_content"></article>
+        <article class="post__content" v-html="post.content"></article>
     </section>
 </template>
 
 <script>
-    import Backend from '../../config/backend'
-
     export default {
         data() {
             return {
@@ -31,11 +29,6 @@
                             day: '2-digit'
                         }
                     )
-            }
-        },
-        watch: {
-            '$route' (to, from) {
-                this.post = this.$store.getters.activeContent[0]
             }
         }
     }

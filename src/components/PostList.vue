@@ -6,8 +6,8 @@
                     <time class="post-list__date">
                       {{ parseDate(post.date) }}
                     </time>
-                    <h1 class="post-list__heading" v-html="post.title.rendered"></h1>
-                    <p class="post-list__excerpt" v-html="post.excerpt.rendered"></p>
+                    <h1 class="post-list__heading" v-html="post.title"></h1>
+                    <p class="post-list__excerpt" v-html="post.excerpt"></p>
                 </router-link>
             </li>
         </ul>
@@ -18,25 +18,18 @@
     import Backend from '../../config/backend'
 
     export default {
-        name: 'Posts',
         data() {
             return {
-                posts: []
+                posts: this.$store.getters.activeContent
             }
         },
         methods: {
-            getPosts() {
-                this.$http.get(`${Backend()}/wp-json/wp/v2/posts`)
-                    .then(response => {
-                        this.posts = response.body;
-                    });
-            },
             cutUrl(url) {
                 return url.replace(`${Backend()}/`, '');
             },
             parseDate(date) {
-                return new Date(
-                    Date.parse(date)).toLocaleString(
+                return new Date(Date.parse(date))
+                    .toLocaleString(
                         'en-GB',
                         {
                             year: 'numeric',
@@ -45,17 +38,8 @@
                         }
                     )
             }
-        },
-        created() {
-            this.getPosts()
-        },
-        watch: {
-            '$route' (to, from) {
-                this.getPosts()
-            }
         }
     }
-
 </script>
 
 <style lang="scss">
