@@ -1,6 +1,6 @@
 <template>
     <section>
-        <posts/>
+        <posts></posts>
     </section>
 </template>
 

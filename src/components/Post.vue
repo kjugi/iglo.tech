@@ -1,6 +1,6 @@
 
 <template>
-    <section class="post">
+    <section class="post container">
         <time class="post__date">
             {{ parseDate(post.post_date) }}
         </time>
@@ -17,19 +17,13 @@
     export default {
         data() {
             return {
-                post: false
+                post: this.$store.getters.activeContent[0]
             }
         },
         methods: {
-            getPost() {
-                this.$http.get(`${Backend()}/wp-json/headless/v1/post-by-url${this.$route.path}`)
-                    .then(response => {
-                        this.post = response.body;
-                    });
-            },
             parseDate(date) {
-                return new Date(
-                    Date.parse(date)).toLocaleString(
+                return new Date(Date.parse(date))
+                    .toLocaleString(
                         'en-GB',
                         {
                             year: 'numeric',
@@ -39,12 +33,9 @@
                     )
             }
         },
-        created() {
-            this.getPost()
-        },
         watch: {
             '$route' (to, from) {
-                this.getPost()
+                this.post = this.$store.getters.activeContent[0]
             }
         }
     }
@@ -52,9 +43,7 @@
 
 <style lang="scss">
     .post {
-        width: 90%;
         max-width: 700px;
-        margin: auto;
         padding: 20px 0;
 
         &__date {

@@ -1,7 +1,7 @@
 <template>
-    <section class="posts">
+    <section class="container">
         <ul class="post-list">
-            <li class="post-list__item" v-for="post in posts">
+            <li class="post-list__item" v-for="post in posts" v-bind:key="post">
                 <router-link :to="cutUrl(post.link)" class="post-list__link">
                     <time class="post-list__date">
                       {{ parseDate(post.date) }}
@@ -59,12 +59,6 @@
 </script>
 
 <style lang="scss">
-    .posts {
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-    }
-
     .post-list {
         display: flex;
         flex-direction: row;

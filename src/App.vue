@@ -2,8 +2,8 @@
   <div id="app">
     <app-header></app-header>
     <main class="main">
-      <transition name="fade">
-        <router-view></router-view>
+      <transition name="fade" mode="out-in" appear>
+        <router-view :key="$route.fullPath"></router-view>
       </transition>
     </main>
     <app-footer></app-footer>
@@ -47,6 +47,12 @@
   .main {
     min-height: 100vh;
     padding: 20px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
   }
 
   .fade-enter-active, .fade-leave-active {
