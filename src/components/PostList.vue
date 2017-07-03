@@ -25,7 +25,7 @@
         },
         methods: {
             cutUrl(url) {
-                return url.replace(`${Backend()}/`, '');
+                return url.replace(`${Backend()}/`, '/');
             },
             parseDate(date) {
                 return new Date(Date.parse(date))
