@@ -195,6 +195,10 @@
             text-decoration: none;
             color: #fff;
             text-transform: uppercase;
+            transition: all 300ms ease-in-out;
+            &.router-link-active {
+                background: rgba(255, 255, 255, 0.2);
+            }
         }
     }
 </style>

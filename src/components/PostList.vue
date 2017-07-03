@@ -70,10 +70,29 @@
             margin: 0;
         }
         &__excerpt {
+
             line-height: 1.5;
             img {
                 max-width: 100%;
                 height: auto;
+            }
+            .view-article {
+                display: block;
+                width: 200px;
+                margin: auto;
+                padding: 7px 15px;
+                border: 2px solid #16a085;
+                border-radius: 5px;
+                color: #16a085;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+                transition: all 300ms ease;
+                &:hover {
+                    color: #fff;
+                    background: #16a085;
+                }
             }
         }
     }
