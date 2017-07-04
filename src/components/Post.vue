@@ -1,12 +1,9 @@
-
 <template>
     <section class="post container">
         <time class="post__date">
             {{ parseDate(post.date) }}
         </time>
-        <h1 class="post__heading">
-            {{ post.title }}
-        </h1>
+        <h1 class="post__heading" v-html="post.title"></h1>
         <article class="post__content" v-html="post.content"></article>
     </section>
 </template>
