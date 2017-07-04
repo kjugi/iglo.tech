@@ -14,6 +14,12 @@ export function createRouter () {
     mode: 'history'
   })
 
+  // Scroll top on every route change
+  router.beforeEach((to, from, next) => {
+    window.scrollTo(0, 0)
+    next()
+  })
+
   router.beforeEach((to, from, next) => {
     if (to.matched.length === 0) {
       store.dispatch('fetchUrl', to.path)
