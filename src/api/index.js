@@ -1,7 +1,7 @@
 import Backend from '../../config/backend'
 
 export function fetchContentByUrl(url) {
-    if (url === '/'){
+    if (url === '/' || url === '/index.html'){
         return fetch(`${Backend()}/wp-json/headless/v1/home_page`)
             .then(response => response.json())
     }
