@@ -2,13 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import Resource from 'vue-resource'
 import { createRouter } from './router'
 import { createStore } from './store'
 import { sync } from 'vuex-router-sync'
 
 Vue.config.productionTip = false
-Vue.use(Resource)
 
 export const store = createStore();
 const router = createRouter();

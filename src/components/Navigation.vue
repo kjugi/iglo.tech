@@ -16,7 +16,7 @@
         <ul class="main-menu"
             v-bind:class="{ 'main-menu--open': isMenuOpen }"
         >
-            <li v-for="item in menu">
+            <li v-for="item in menu" v-bind:key="item">
                 <router-link :to="item.url" class="main-menu__item">
                     {{ item.title }}
                 </router-link>
@@ -37,9 +37,10 @@
         },
         methods: {
             getMenu() {
-                this.$http.get(`${Backend()}/wp-json/headless/v1/menu/main-menu`)
+                fetch(`${Backend()}/wp-json/headless/v1/menu/main-menu`)
+                    .then(response => response.json())
                     .then(response => {
-                        this.parseMenuData(response.body)
+                        this.parseMenuData(response)
                     });
             },
             parseMenuData(data) {
