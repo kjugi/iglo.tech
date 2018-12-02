@@ -8,5 +8,6 @@
     "routes": [
         { "src": "/api/entity/(?<name>[^/]*)", "dest": "/api/entity.js?name=$name" },
         { "src": "/api/collection/(?<name>[^/]*)", "dest": "/api/collection.js?name=$name" }
-    ]
+    ],
+    "regions": ["bru","iad"]
 }
