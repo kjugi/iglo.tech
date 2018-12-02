@@ -1,44 +1,36 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { fetchContentByUrl } from '../api';
+import axios from 'axios'
+import apiUrl from '@/api/url'
 
 Vue.use(Vuex)
 
 export function createStore() {
   return new Vuex.Store({
     state: {
-      routes: {},
-      posts: {},
+      posts: {}
     },
     actions: {
-      fetchUrl ({ commit }, url) {
-        return fetchContentByUrl(url)
+      getPost ({ commit }, id) {
+        return axios.get(`${apiUrl}/collection/post?items=${id}`)
+          .then(response => response.data)
           .then(response => {
-            commit('saveRoute', {
-              url,
-              ids: response.posts.map(post => post.id)
-            })
-            response.posts.forEach(post => {
-              commit('savePost', post)
-            })
-            return response
+            commit('savePost', response[0].content)
           })
-      }
-    },
-    getters: {
-      activeContent: state => {
-        const ids = state.routes[state.route.fullPath];
-        if (ids) {
-          return ids.map(id => state.posts[id])
-        }
+      },
+      getHome({ commit }) {
+        return axios.get(`${apiUrl}/entity/home`)
+          .then(response => response.data)
+          .then(response => {
+            response.posts.forEach(post => {
+              commit('savePost', post.content)
+            })
+          })
       }
     },
     mutations: {
       savePost (state, post) {
-        Vue.set(state.posts, post.id, post)
-      },
-      saveRoute (state, { url, ids }) {
-        Vue.set(state.routes, url, ids)
+        Vue.set(state.posts, post.slug, post)
       }
     }
   })

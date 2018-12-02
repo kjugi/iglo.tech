@@ -12,7 +12,12 @@
     export default {
         data() {
             return {
-                post: this.$store.getters.activeContent[0]
+                postId: null
+            }
+        },
+        computed: {
+            post() {
+                return this.$store.state.posts[this.postId] || {}
             }
         },
         methods: {
@@ -27,6 +32,10 @@
                         }
                     )
             }
+        },
+        created() {
+            this.postId = this.$route.params.id
+            this.$store.dispatch('getPost', this.postId)
         }
     }
 </script>

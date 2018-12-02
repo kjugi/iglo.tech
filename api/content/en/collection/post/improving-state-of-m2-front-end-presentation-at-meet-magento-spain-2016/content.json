@@ -1,0 +1,59 @@
+{
+    "date": "2016-11-22T18:48:46",
+    "modified": "2017-07-03T02:25:23",
+    "slug": "improving-state-of-m2-front-end-presentation-at-meet-magento-spain-2016",
+    "status": "publish",
+    "type": "post",
+    "link": "https:\/\/iglo.tech\/improving-state-of-m2-front-end-presentation-at-meet-magento-spain-2016\/",
+    "title": "Improving state of M2 front-end &#8211; presentation at Meet Magento Spain 2016",
+    "content": "<p><iframe width=\"600\" height=\"600\" style=\"border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;\" src=\"\/\/www.slideshare.net\/slideshow\/embed_code\/key\/4WSuUjF29aATqq\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\"> <\/iframe><\/p>\n<div style=\"margin-bottom: 5px;\"><strong> <a title=\"Improving state of M2 front-end - Magento 2 Community Project\" href=\"\/\/www.slideshare.net\/BartekIgielski\/improving-state-of-m2-frontend-magento-2-community-project\" target=\"_blank\" rel=\"noopener\">Improving state of M2 front-end &#8211; Magento 2 Community Project<\/a> <\/strong> from <strong><a href=\"\/\/www.slideshare.net\/BartekIgielski\" target=\"_blank\" rel=\"noopener\">Bartek Igielski<\/a><\/strong><\/div>\n",
+    "excerpt": "Improving state of M2 front-end &#8211; Magento 2 Community Project from Bartek Igielski",
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "comment_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "_links": {
+        "self": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/183"
+        }],
+        "collection": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/"
+        }],
+        "about": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/types\/"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/users\/1"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/comments?post=183"
+        }],
+        "version-history": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/183\/revisions"
+        }],
+        "wp:attachment": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media?parent=183"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/categories?post=183"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/tags?post=183"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}

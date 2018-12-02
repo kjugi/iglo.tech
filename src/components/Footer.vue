@@ -6,7 +6,6 @@
 
 <script>
     export default {
-        name: 'app-footer',
         computed: {
             getYear() {
                 return new Date().getFullYear()

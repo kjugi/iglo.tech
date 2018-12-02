@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import { store } from '../main'
-import Backend from '../../config/backend'
 
 import Post from '@/components/Post'
 import PostList from '@/components/PostList'
@@ -11,39 +10,16 @@ Vue.use(Router)
 
 export function createRouter () {
   const router = new Router({
-    mode: 'history'
+    mode: 'history',
+    routes: [
+      { path: '/', component: PostList },
+      { path: '/post/:id', component: Post }
+    ]
   })
 
   // Scroll top on every route change
   router.beforeEach((to, from, next) => {
     window.scrollTo(0, 0)
-    next()
-  })
-
-  router.beforeEach((to, from, next) => {
-    if (to.matched.length === 0) {
-      store.dispatch('fetchUrl', to.path)
-        .then(response => {
-          switch(response.type) {
-            case 'home':
-            case 'category':
-            case 'tag':
-            case 'archive':
-              router.addRoutes([{path: to.path, component: PostList}])
-              break
-            case 'single':
-            case 'page':
-              router.addRoutes([{path: to.path, component: Post}])
-              break
-            default:
-              router.addRoutes([{path: to.path, component: NotFound}])
-              break
-          }
-        })
-        .catch(() => {
-          router.addRoutes([{path: to.path, component: NotFound}])
-        })
-    }
     next()
   })
 

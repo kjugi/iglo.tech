@@ -15,18 +15,13 @@
 </template>
 
 <script>
-    import Backend from '../../config/backend'
-
     export default {
         data() {
             return {
-                posts: this.$store.getters.activeContent
+                posts: this.$store.state.posts
             }
         },
         methods: {
-            cutUrl(url) {
-                return url.replace(`${Backend()}/`, '/');
-            },
             parseDate(date) {
                 return new Date(Date.parse(date))
                     .toLocaleString(
@@ -37,7 +32,13 @@
                             day: '2-digit'
                         }
                     )
+            },
+            cutUrl(url) {
+                return url.replace('https://iglo.tech', '/post')
             }
+        },
+        created() {
+            this.$store.dispatch('getHome')
         }
     }
 </script>

@@ -1,21 +1,17 @@
 <template>
     <header class="header">
         <router-link :to="'/'" class="header__logo">
-            <logo fill="#fff"></logo>
+            <logo fill="#fff"/>
         </router-link>
-        <navigation></navigation>
     </header>
 </template>
 
 <script>
     import Logo from '../assets/logo.svg'
-    import Navigation from '@/components/Navigation'
 
     export default {
-        name: 'app-header',
         components: {
-            Logo,
-            Navigation
+            Logo
         }
     }
 </script>

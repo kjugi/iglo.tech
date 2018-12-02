@@ -1,0 +1,59 @@
+{
+    "date": "2016-08-18T00:10:46",
+    "modified": "2016-08-18T00:11:28",
+    "slug": "my-talk-on-meet-magento-germany-2016",
+    "status": "publish",
+    "type": "post",
+    "link": "https:\/\/iglo.tech\/my-talk-on-meet-magento-germany-2016\/",
+    "title": "My talk on Meet Magento Germany 2016",
+    "content": "<p><iframe src=\"\/\/www.slideshare.net\/slideshow\/embed_code\/key\/kMiYtXn2qY74Jc\" width=\"600\" height=\"600\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> <\/iframe> <\/p>\n<div style=\"margin-bottom:5px\"> <strong> <a href=\"\/\/www.slideshare.net\/BartekIgielski\/magento-2-community-project-moving-from-less-to-sass\" title=\"Magento 2 Community Project - Moving from LESS to SASS\" target=\"_blank\">Magento 2 Community Project &#8211; Moving from LESS to SASS<\/a> <\/strong> from <strong><a target=\"_blank\" href=\"\/\/www.slideshare.net\/BartekIgielski\">Bartek Igielski<\/a><\/strong> <\/div>\n",
+    "excerpt": "Magento 2 Community Project &#8211; Moving from LESS to SASS from Bartek Igielski",
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "comment_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "_links": {
+        "self": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/172"
+        }],
+        "collection": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/"
+        }],
+        "about": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/types\/"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/users\/1"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/comments?post=172"
+        }],
+        "version-history": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/172\/revisions"
+        }],
+        "wp:attachment": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media?parent=172"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/categories?post=172"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/tags?post=172"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}
