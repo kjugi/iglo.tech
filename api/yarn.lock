@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@snowdog/wombat@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@snowdog/wombat/-/wombat-1.0.0-alpha.5.tgz#eb8ba5321cf9bcfa6251b3f3d98f67e5802367dc"
-  integrity sha512-RgXg0eGP7ixV00Pb/GNuSAUNA6kh79cb4zhN9oLCuDQaGPABAkpiCvW742uvXRGqlT1/QyjscLJaO0r44VvgBQ==
+"@snowdog/wombat@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@snowdog/wombat/-/wombat-1.0.0-alpha.6.tgz#13bb37aa0029fb4540b17ed08b650cc29d743b09"
+  integrity sha512-qlMtu6zdvynfXgvKZyf3faHlHcrCmg7f02PZlhn7i92lwSUTL+RbxmUCgg1IU50XPvmGZN0sBi+w3OrgQey3OA==
   dependencies:
     express "^4.16.4"
     fs-extra "^7.0.1"
