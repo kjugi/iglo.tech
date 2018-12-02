@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": ["iglo.tech"],
     "builds": [
         { "src": "package.json", "use": "@now/static-build" },
         { "src": "api/*.js", "use": "@now/node" }
