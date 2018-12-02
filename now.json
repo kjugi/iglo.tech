@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "package.json", "use": "@now/static-build" },
+        { "src": "api/*.js", "use": "@now/node" }
+    ],
+    "routes": [
+        { "src": "/api/entity/(?<name>[^/]*)", "dest": "/api/entity.js?name=$name" },
+        { "src": "/api/collection/(?<name>[^/]*)", "dest": "/api/collection.js?name=$name" }
+    ]
+}

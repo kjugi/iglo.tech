@@ -1,0 +1,63 @@
+{
+    "date": "2016-08-17T23:23:39",
+    "modified": "2016-08-18T00:14:30",
+    "slug": "front-end-news-summary-1",
+    "status": "publish",
+    "type": "post",
+    "link": "https:\/\/iglo.tech\/front-end-news-summary-1\/",
+    "title": "Front-end news summary #1",
+    "content": "<p>It takes me almost two weeks to create this super long list of articles worth to read and it&#8217;s just a summary of last few weeks.<\/p>\n<p>Still most of old newsletters are waiting, but I make a order in my mails moving from Gmail to Google Inbox. Now I can take advantage of grouping and treating mails like a &#8220;to do&#8221; list.<\/p>\n<blockquote><p>In today’s highly competitive business environment, we all need to be in constant learning mode. No one can afford to take a vacation from developing new skills, especially as economic and political uncertainty threaten businesses and job stability and make future career prospects unclear.<\/p><\/blockquote>\n<p class=\"entry-title\" style=\"text-align: right;\"><em>Source: <a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/further.net\/tricky-goals\/\">How to Trick Yourself Into Accomplishing Tough Goals<\/a><\/em><\/p>\n<h3>General<\/h3>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/alistapart.com\/article\/adapting-to-input\">Adapting to Input<\/a><br \/>\nSooo important topic, b\/c designing &#8220;desktop&#8221; to be used with mouse and keyboard only, with tons of &#8220;on hover&#8221; content is, unfortunately, common practise.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/99designs.com.au\/tech-blog\/blog\/2016\/07\/14\/real-world-http-2-400gb-of-images-per-day\/\">Real–world HTTP\/2: 400gb of images per day<\/a><br \/>\nSome &#8220;real&#8221; H2 test, but without removing H1.1 performance optimizations, shows up it&#8217;s not a good idea to just turn on H2 without worrying about front-end stuff.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/bradfrost.com\/blog\/post\/a-code-review-or-yet-another-reason-to-love-the-web\/\">A Code Review, Or Yet Another Reason to Love the Web<br \/>\n<\/a>Good read about importance of code review, markup structure, naming conventions and power of community. Inspiring.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/github.com\/FallibleInc\/security-guide-for-developers\">A practical security guide for web developers<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/www.chenhuijing.com\/blog\/healthier-dev\">Strategies for Healthier Dev<\/a><br \/>\nOh my god, so many bad behaviours to change&#8230; :D<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/cloudfour.com\/thinks\/the-business-case-for-progressive-web-apps\/\">The Business Case for Progressive Web Apps<\/a><br \/>\nTechnical articles about Progressive Web Apps abound, but few tackle the question of why businesses should build Progressive Web Apps and why they should do so now.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/tompetersononline.wordpress.com\/2016\/07\/19\/the-death-of-the-natives-a-progressive-shift-for-apps-web-marketers\/\">The death of the natives? A progressive shift for apps, web &amp; marketers<\/a><\/li>\n<\/ol>\n<h2>Design<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.freecodecamp.com\/stop-the-overuse-of-overflow-menus-5caa4b54e843#.m79tyog9o\">Stop the overuse of overflow menus<\/a><br \/>\nThe trouble with overflow menus is that you didn’t actually take anything away, you just obnoxiously obfuscated it.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.freecodecamp.com\/designing-a-styleguide-elements-that-go-into-functional-and-beautiful-products-ff1621e00a0e#.yrpjbvibz\">Designing a styleguide<\/a><br \/>\n&#8220;Consistency is important because it creates trust. And design is all about creating relationships between products and users.&#8221;<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/blablacar-design\/stop-designing-interfaces-start-designing-experiences-d82def0b802c#.c605apj5g\">Stop designing interfaces, Start designing experiences<\/a><br \/>\nWe don’t want our designers to spend any more time on interfaces, we want them to focus on the experience only.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/www.nngroup.com\/articles\/centered-logos\/\">Centered Logos Hurt Website Navigation<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/standards.usa.gov\/\">U.S. Web Design Standards<\/a><\/li>\n<\/ol>\n<h2>Performance<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/www.voorhoede.nl\/en\/blog\/why-our-website-is-faster-than-yours\/\">Why our website is faster than yours<\/a><br \/>\nGood case study of redesign focused on performance.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/jakearchibald.com\/2016\/performance-benefits-of-rel-noopener\/\">The performance benefits of rel=noopener<br \/>\n<\/a>Due to the synchronous cross-window access the DOM gives us via window.opener, windows launched via target=&#8221;_blank&#8221;  end up in the same process &amp; thread.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/www.zachleat.com\/web\/comprehensive-webfonts\/\">A Comprehensive Guide to Font Loading Strategies<\/a><\/li>\n<li>\n<div><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/developers.google.com\/web\/showcase\/2016\/service-worker-perf\">Measuring the Real-world Performance Impact of Service Workers<br \/>\n<\/a><\/div>\n<\/li>\n<\/ol>\n<h2>JavaScript<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/github.com\/TalAter\/awesome-service-workers\">Awesome Service Workers<\/a><br \/>\nA curated collection of service worker resources.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/the-guardian-mobile-innovation-lab\/web-notifications-introduction-news-on-lock-screens-ba0d685cb4e2#.efdxomr3a\">Web Notifications Introduction: News on Lock(screens)<\/a><br \/>\nHow the Guardian US Mobile Innovation Lab has experimented with telling stories in web notifications.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/bitsofco.de\/the-service-worker-lifecycle\/\">The Service Worker Lifecycle<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/es6.io\/\">Video course &#8220;ES6 for Everyone&#8221;<br \/>\n<\/a>I&#8217;m somewhere in middle of watching and really like it!<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/tutorialzine.com\/2016\/07\/learn-typescript-in-30-minutes\/\">Learn TypeScript in 30 Minutes<\/a><br \/>\nThis tutorial is aimed at people who are fairly proficient in JavaScript but are still beginners when it comes to TypeScript.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/codebrahma.com\/whats-new-jquery-3-0\/\">What’s new inside jQuery 3.0<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/rainsoft.io\/how-three-dots-changed-javascript\/\">How three dots changed JavaScript<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/javascript-scene\/12-books-every-javascript-developer-should-read-9da76157fb3#.grih3jkgv\">12 Books Every JavaScript Developer Should Read<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/github.com\/egoist\/vuepack\">VuePack<\/a><br \/>\nA modern starter which uses Vue 2, Vuex, Vue-router and Webpack 2<\/li>\n<\/ol>\n<h2>Styling<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/jgthms.com\/web-design-in-4-minutes\/\">Web Design in 4 minutes<\/a><br \/>\nIt&#8217;s possible to style a page in 4 minutes?<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/css-tricks.com\/full-width-containers-limited-width-parents\/\">Full Width Containers in Limited Width Parents<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/css-tricks.com\/considerations-styling-modal\/\">Considerations for Styling a Modal<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/rachelandrew.co.uk\/archives\/2016\/07\/14\/css-grid-updates-changes-and-state-of-the-browsers\">Current state of CSS Grids<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/peergrade-io\/structuring-css-in-large-projects-37f1695f5ec8?goal=0_df65b6d7c8-6470ccc788-59052601&amp;mc_cid=6470ccc788&amp;mc_eid=ce730e6e17#.lo0xe7m9h\">Structuring CSS in large projects<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/css-tricks.com\/high-performance-svgs\/\">High Performance SVGs<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/@stowball\/bemantic-dry-like-you-mean-it-133ea3843d98#.18btuend8\">BEMantic: DRY Like You Mean It<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/hiddedevries.nl\/en\/blog\/2016-08-09-bootstrap-considered-harmful\" rel=\"bookmark\">Bootstrap considered harmful<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/speakerdeck.com\/csswizardry\/refactoring-css-without-losing-your-mind\">Refactoring CSS Without Losing Your Mind<\/a><\/li>\n<\/ol>\n<h2>Tools and plugins<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/sympli.io\/\">Sympli<\/a><br \/>\nCollaboration platform for designers and developers that works with Xcode, Android Studio, Sketch and Photoshop.<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/chmln.github.io\/flatpickr\/\">flatpickr<\/a><br \/>\nA lightweight &amp; powerful date-time-picker<\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/fractal.build\/\">Fractal<\/a><br \/>\nA tool to help you build &amp; document web component libraries, and then integrate them into your web projects.<\/li>\n<\/ol>\n<h2>Accessibility<\/h2>\n<ol>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"http:\/\/accessibility.voxmedia.com\/\">Vox Accessibility Guidelines<\/a><\/li>\n<li><a target=\"_blank\" rel=\"noopener\" href=\"https:\/\/medium.com\/@addyosmani\/accessible-ui-components-for-the-web-39e727101a67#.6gxyt352c\">Accessible UI Components For The Web<\/a><\/li>\n<\/ol>\n<p>PS. I&#8217;ll try to figure out a way to make it much easier to read in next issue, because I&#8217;m pretty sure that list of 40 articles doesn&#8217;t look so friendly.<\/p>\n",
+    "excerpt": "It takes me almost two weeks to create this super long list of articles worth to read and it&#8217;s just a summary of last few weeks. Still most of old newsletters are waiting, but I make a order in my mails moving from Gmail to Google Inbox. Now I can take advantage of grouping and<\/p><p><a class=\"view-article\" href=\"https:\/\/iglo.tech\/front-end-news-summary-1\/\">Read more<\/a><\/p>",
+    "author": 1,
+    "featured_media": 168,
+    "parent": 0,
+    "comment_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "_links": {
+        "self": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/129"
+        }],
+        "collection": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/"
+        }],
+        "about": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/types\/"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/users\/1"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/comments?post=129"
+        }],
+        "version-history": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/129\/revisions"
+        }],
+        "wp:featuredmedia": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media\/168"
+        }],
+        "wp:attachment": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media?parent=129"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/categories?post=129"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/tags?post=129"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}
