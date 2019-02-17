@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
 import apiUrl from '@/api/url'
+import camelCase from 'lodash.camelcase'
 
 Vue.use(Vuex)
 
@@ -12,14 +13,14 @@ export function createStore() {
     },
     actions: {
       getPost ({ commit }, id) {
-        return axios.get(`${apiUrl}/collection/post?items=${id}`)
+        return axios.get(`${apiUrl}/collection?name=post&items=${camelCase(id)}`)
           .then(response => response.data)
           .then(response => {
-            commit('savePost', response[0].content)
+            commit('savePost', response[camelCase(id)].content)
           })
       },
       getHome({ commit }) {
-        return axios.get(`${apiUrl}/entity/home`)
+        return axios.get(`${apiUrl}/entity?name=home`)
           .then(response => response.data)
           .then(response => {
             response.posts.forEach(post => {
