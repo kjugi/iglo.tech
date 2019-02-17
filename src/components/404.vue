@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="container">
         <h1>
             404 - You are doomed!
         </h1>

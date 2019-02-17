@@ -1,13 +1,13 @@
 <template>
-    <section class="posts">
+    <section class="container">
         <ul class="post-list">
-            <li class="post-list__item" v-for="post in posts">
+            <li class="post-list__item" v-for="post in posts" v-bind:key="post">
                 <router-link :to="cutUrl(post.link)" class="post-list__link">
                     <time class="post-list__date">
                       {{ parseDate(post.date) }}
                     </time>
-                    <h1 class="post-list__heading" v-html="post.title.rendered"></h1>
-                    <p class="post-list__excerpt" v-html="post.excerpt.rendered"></p>
+                    <h1 class="post-list__heading" v-html="post.title"></h1>
+                    <p class="post-list__excerpt" v-html="post.excerpt"></p>
                 </router-link>
             </li>
         </ul>
@@ -15,28 +15,16 @@
 </template>
 
 <script>
-    import Backend from '../../config/backend'
-
     export default {
-        name: 'Posts',
         data() {
             return {
-                posts: []
+                posts: this.$store.state.posts
             }
         },
         methods: {
-            getPosts() {
-                this.$http.get(`${Backend()}/wp-json/wp/v2/posts`)
-                    .then(response => {
-                        this.posts = response.body;
-                    });
-            },
-            cutUrl(url) {
-                return url.replace(`${Backend()}/`, '');
-            },
             parseDate(date) {
-                return new Date(
-                    Date.parse(date)).toLocaleString(
+                return new Date(Date.parse(date))
+                    .toLocaleString(
                         'en-GB',
                         {
                             year: 'numeric',
@@ -44,27 +32,18 @@
                             day: '2-digit'
                         }
                     )
+            },
+            cutUrl(url) {
+                return url.replace('https://iglo.tech', '/post')
             }
         },
         created() {
-            this.getPosts()
-        },
-        watch: {
-            '$route' (to, from) {
-                this.getPosts()
-            }
+            this.$store.dispatch('getHome')
         }
     }
-
 </script>
 
 <style lang="scss">
-    .posts {
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-    }
-
     .post-list {
         display: flex;
         flex-direction: row;
@@ -92,10 +71,29 @@
             margin: 0;
         }
         &__excerpt {
+
             line-height: 1.5;
             img {
                 max-width: 100%;
                 height: auto;
+            }
+            .view-article {
+                display: block;
+                width: 200px;
+                margin: auto;
+                padding: 7px 15px;
+                border: 2px solid #16a085;
+                border-radius: 5px;
+                color: #16a085;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+                transition: all 300ms ease;
+                &:hover {
+                    color: #fff;
+                    background: #16a085;
+                }
             }
         }
     }

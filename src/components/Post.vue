@@ -1,35 +1,29 @@
-
 <template>
-    <section class="post">
+    <section class="post container">
         <time class="post__date">
-            {{ parseDate(post.post_date) }}
+            {{ parseDate(post.date) }}
         </time>
-        <h1 class="post__heading">
-            {{ post.post_title }}
-        </h1>
-        <article class="post__content" v-html="post.post_content"></article>
+        <h1 class="post__heading" v-html="post.title"></h1>
+        <article class="post__content" v-html="post.content"></article>
     </section>
 </template>
 
 <script>
-    import Backend from '../../config/backend'
-
     export default {
         data() {
             return {
-                post: false
+                postId: null
+            }
+        },
+        computed: {
+            post() {
+                return this.$store.state.posts[this.postId] || {}
             }
         },
         methods: {
-            getPost() {
-                this.$http.get(`${Backend()}/wp-json/headless/v1/post-by-url${this.$route.path}`)
-                    .then(response => {
-                        this.post = response.body;
-                    });
-            },
             parseDate(date) {
-                return new Date(
-                    Date.parse(date)).toLocaleString(
+                return new Date(Date.parse(date))
+                    .toLocaleString(
                         'en-GB',
                         {
                             year: 'numeric',
@@ -40,21 +34,15 @@
             }
         },
         created() {
-            this.getPost()
-        },
-        watch: {
-            '$route' (to, from) {
-                this.getPost()
-            }
+            this.postId = this.$route.params.id
+            this.$store.dispatch('getPost', this.postId)
         }
     }
 </script>
 
 <style lang="scss">
     .post {
-        width: 90%;
         max-width: 700px;
-        margin: auto;
         padding: 20px 0;
 
         &__date {

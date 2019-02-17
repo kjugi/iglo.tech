@@ -10,7 +10,6 @@
     import Logo from '../assets/logo.svg'
 
     export default {
-        name: 'app-header',
         components: {
             Logo
         }

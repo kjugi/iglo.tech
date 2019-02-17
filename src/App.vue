@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <app-header />
+    <app-header/>
     <main class="main">
-      <router-view />
+      <transition name="fade" mode="out-in" appear>
+        <router-view :key="$route.fullPath" />
+      </transition>
     </main>
-    <app-footer />
+    <app-footer/>
   </div>
 </template>
 
@@ -43,6 +45,26 @@
   }
 
   .main {
+    min-height: 100vh;
     padding: 20px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition-property: opacity;
+    transition-duration: .25s;
+  }
+
+  .fade-enter-active {
+    transition-delay: .25s;
+  }
+
+  .fade-enter, .fade-leave-active {
+    opacity: 0
   }
 </style>

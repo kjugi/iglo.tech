@@ -1,0 +1,59 @@
+{
+    "date": "2016-04-18T23:54:58",
+    "modified": "2016-04-21T09:04:18",
+    "slug": "magento-2-from-a-front-end-developer-perspective",
+    "status": "publish",
+    "type": "post",
+    "link": "https:\/\/iglo.tech\/magento-2-from-a-front-end-developer-perspective\/",
+    "title": "Magento 2 from a front-end developer perspective",
+    "content": "<p>I had hard times with front-end part of M2 a the beginning&#8230; Oh, wait. Still have. Unfortunately.<\/p>\n<p>That&#8217;s why I decide to create this blog &#8211; yeah, it&#8217;s my first post here.<\/p>\n<h2><em>&#8220;What happens? Everybody says M2 is awesome!&#8221;<\/em><\/h2>\n<p>I really like to be honest, even when shouldn&#8217;t, so please have in mind that:<\/p>\n<ol>\n<li>I&#8217;m a developer<\/li>\n<li>I&#8217;m a front-end guy<\/li>\n<li>It&#8217;s  just mine point of view<\/li>\n<li>It&#8217;s not official statement of any company<\/li>\n<\/ol>\n<p>Magento 2 is huge step forward, especially when it comes to open source part &#8211; moving whole codebase to Github is best what can possibly happened to us.<\/p>\n<p>Overall engine performance was increased, back-end devs says that many things was changed to better solutions and working with 2.x going to be nicer than with 1.x.<\/p>\n<p>But&#8230; When it comes to front-end part, unfortunately changes aren&#8217;t looking that good. At the beginning let me try to explain, how different are goals of back-end vs. front-end.<\/p>\n<h3>Goals of front-end dev<\/h3>\n<p>Provide best possible UI and UX to end users. So we should care about:<\/p>\n<ol>\n<li>Implementing design fast and precise<\/li>\n<li>Compatibility with maaaaany browsers<\/li>\n<li>Variety of devices  &#8211; Hardware trends, screen sizes, types of input (touch, mouse, screen readers etc.), performance&#8230;<\/li>\n<li>Overall web app performance<\/li>\n<li>Accessibility<\/li>\n<\/ol>\n<p>Hardware trends, users and clients expectations, networks speeds and many more factors are changing rapidly through time. That&#8217;s why front-end tools evolves much faster than others.<\/p>\n<p>I&#8217;m not into big frameworks (Angular, React etc.), SPAs, ES6, MEAN&#8230; whole &#8220;JavaScript oriented&#8221; world, but care a lot about one thing &#8211; <strong>front-end devs should make front-end using front-end oriented tools<\/strong>, instead of &#8220;weird, limited version of <em>name_of_your_engine_of_choice<\/em> (i.e. Magento) front-end&#8221;.<\/p>\n<p>In our beautiful, full of not keeping up standards browsers, world of front-end, every year brings a lot of changes changes, thats why people laugh about &#8220;day without new JS framework&#8221;.<\/p>\n<h3>(Possible) Goals of back-end dev<\/h3>\n<p>Create cost effective, rock stable and scalable infrastructure for processing clients data fast and secure. So any rapid changes, just consistent evolution, improving things one by one.<\/p>\n<p>I know that this might be too simplified description, but hey &#8211; I&#8217;m not back-end guy, just want to notice different.<\/p>\n<p><img class=\"aligncenter wp-image-42 size-full\" src=\"http:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/1655877_1267887059891336_5563402787800190734_n.jpg\" alt=\"1655877_1267887059891336_5563402787800190734_n\" width=\"650\" height=\"634\" srcset=\"https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/1655877_1267887059891336_5563402787800190734_n.jpg 650w, https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/1655877_1267887059891336_5563402787800190734_n-250x244.jpg 250w, https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/1655877_1267887059891336_5563402787800190734_n-120x117.jpg 120w\" sizes=\"(max-width: 650px) 100vw, 650px\" \/><\/p>\n<h3><i>Summary<\/i><\/h3>\n<p>As you see differences are huge, almost like two separate worlds (connected via API)<\/p>\n<h2>What is wrong with front-end of M2?<\/h2>\n<ol>\n<li>Use PHP to build font-end tools<\/li>\n<li>This tools are slooooow and we can&#8217;t extend or customize them, because lack of extensions and our knowledge of PHP<\/li>\n<li>Grunt, LESS, RequireJS, jQuery, Knockout, Prototype and Scriptaculous (yeah, it&#8217;s still here for some reason), LiveReload&#8230; and possibly many more. All of this things are outdated right now, slowly dying or not popular anymore, but it doesn&#8217;t really matter.<\/li>\n<\/ol>\n<p>You know what really sucks? This things are so damn <strong>deeply integrated with whole Magento and closely unchangeable<\/strong> without hard overrides or creating everything from scratch.<\/p>\n<p>That&#8217;s my point<strong> &#8211; Magento 2 font-end looks like designed by back-end devs.<\/strong><\/p>\n<h3><em>&#8220;But you can use whatever you want&#8221;<\/em><\/h3>\n<p>I dreamed whole life about spending thousands of hours overriding Magento core. Cool. Indeed. Thanks for making this possible.<\/p>\n<p><img class=\"aligncenter size-full wp-image-33\" src=\"http:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/sarcasm_font.jpg\" alt=\"sarcasm_font\" srcset=\"https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/sarcasm_font.jpg 420w, https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/sarcasm_font-250x175.jpg 250w, https:\/\/iglo.tech\/wp-content\/uploads\/2016\/04\/sarcasm_font-120x84.jpg 120w\" sizes=\"(max-width: 420px) 100vw, 420px\" \/><\/p>\n<h2>Summary<\/h2>\n<p>I know I&#8217;m now just hating someone else (really hard!) work, but don&#8217;t get me wrong &#8211; I&#8217;m happy that M2 is up, but I don&#8217;t like marketing bullshit and talking only about pros of some software software, because software by design is something with cons.<\/p>\n<h3>What we should do?<\/h3>\n<p>Definitely keep idea of open source &#8211; discuss about problems, possible solutions, share ideas, contribute creating documentation or <em>&#8220;simply&#8221;<\/em> write code.<br \/>\nWe have so strong community around Magento and projects like <a href=\"https:\/\/twitter.com\/hashtag\/RoadToImagine\" target=\"_blank\">#RoadToImagine<\/a> with <em>&#8220;Four Horsemen of the Apocalypse™&#8221;<\/em>, proves that good people stands behind Magento, not only technology.<\/p>\n<h3><em>&#8220;Did you make first step?&#8221;<\/em><\/h3>\n<p>Yup. We, as <a href=\"https:\/\/snow.dog\/\" target=\"_blank\">Snowdog<\/a>, created  <a href=\"https:\/\/github.com\/SnowdogApps\/magento2-frontools\" target=\"_blank\">Frontools<\/a>, set of Gulp based tools for front-end devs and <a href=\"https:\/\/github.com\/SnowdogApps\/magento2-theme-blank-sass\" target=\"_blank\">SASS version of &#8220;Blank&#8221; theme<\/a> (LESS sucks&#8230; I said few weeks ago about blog post with detailed description of differences between LESS based theme and our version &#8211; will be soon, I promise :) )<\/p>\n<p>Of course it&#8217;s not a game changer, but definitely good foundation for further projects.<\/p>\n<p>It&#8217;s also entry point for me, that&#8217;s my first attempts ever in creating something almost from scratch and sharing them to you.<\/p>\n<p>&nbsp;<\/p>\n<blockquote><p><strong>Afterword<\/strong><\/p>\n<p>My English skills are not even close to be good (I&#8217;m working on it), so my thoughts were described using simple language and might not express my real feelings in proper way. It might looks like hate speech, but I just want to notice problem and invite people to start working on it.<\/p><\/blockquote>\n",
+    "excerpt": "I had hard times with front-end part of M2 a the beginning&#8230; Oh, wait. Still have. Unfortunately. That&#8217;s why I decide to create this blog &#8211; yeah, it&#8217;s my first post here. &#8220;What happens? Everybody says M2 is awesome!&#8221; I really like to be honest, even when shouldn&#8217;t, so please have in mind that: I&#8217;m a developer I&#8217;m<\/p><p><a class=\"view-article\" href=\"https:\/\/iglo.tech\/magento-2-from-a-front-end-developer-perspective\/\">Read more<\/a><\/p>",
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "comment_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "_links": {
+        "self": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/10"
+        }],
+        "collection": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/"
+        }],
+        "about": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/types\/"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/users\/1"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/comments?post=10"
+        }],
+        "version-history": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/10\/revisions"
+        }],
+        "wp:attachment": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media?parent=10"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/categories?post=10"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/tags?post=10"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}
