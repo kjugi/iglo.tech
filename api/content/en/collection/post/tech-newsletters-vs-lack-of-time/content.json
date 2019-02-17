@@ -1,0 +1,59 @@
+{
+    "date": "2016-08-05T22:39:13",
+    "modified": "2016-08-05T22:57:26",
+    "slug": "tech-newsletters-vs-lack-of-time",
+    "status": "publish",
+    "type": "post",
+    "link": "https:\/\/iglo.tech\/tech-newsletters-vs-lack-of-time\/",
+    "title": "Tech newsletters vs lack of time",
+    "content": "<p>I&#8217;m that type of person who loves to have organized inbox and a fan of &#8220;inbox zero&#8221; rule. But I have so much other things to do and I&#8217;m lazy. Now I have about 200 unread emails with tech newsletters&#8230; Time to fix that!<\/p>\n<h2>Why read tech newsletters?<\/h2>\n<p>Most of tech newsletters provide an easy way to get into releases, updates, new things and other types of knowledge, like soft skills. It&#8217;s really great to have set of most important informations from industry just ready to read on you inbox every week, without paying a single $$$. For me it&#8217;s much better way than digging through Twitter, reading news pages, forums, Github or RSS regularly, because it&#8217;s consuming enormous amounts of time.<\/p>\n<h2>But&#8230; I don&#8217;t have enough time for that!<\/h2>\n<p>Probably you too&#8230; That&#8217;s why I have almost 200 unread newsletters. Will be not so nice to just to throw away all of them, even just because I always found something worth to read inside.<\/p>\n<p>I decided to spend this weekend on reading all of them to have a perfect &#8220;inbox zero&#8221; #perfectWeekend<\/p>\n<p><video autoplay=\"autoplay\" loop=\"loop\" muted=\"\"><source src=\"http:\/\/media.gettyimages.com\/videos\/close-up-baboon-wearing-eyeglasses-holding-financial-section-of-and-video-id712-6\" type=\"video\/mp4\" \/><\/video><\/p>\n<h2>What next? How to force myself to read them regularly?<\/h2>\n<p>I&#8217;m going to post every two weeks a summary of best resources that I read. It should be a good reason to find time every week to stay updated and maybe for you, as a another way to get some news.<\/p>\n<h2>My newsletters subscriptions list<\/h2>\n<ol>\n<li><a href=\"https:\/\/www.smashingmagazine.com\/the-smashing-newsletter\/\">The Smashing Email Newsletter<\/a><\/li>\n<li><a href=\"https:\/\/web-design-weekly.com\/\">Web Design Weekly<\/a><\/li>\n<li><a href=\"https:\/\/wdrl.info\/\">Web Development Reading List<\/a><\/li>\n<li><a href=\"http:\/\/the-webdesigner.co\/\">The Web Designer<\/a><\/li>\n<li><a href=\"https:\/\/responsivedesign.is\/\">Responsive Design Knowledge Hub<\/a><\/li>\n<li><a href=\"https:\/\/ewebdesign.com\/\">eWebDesign<\/a><\/li>\n<li><a href=\"https:\/\/www.getrevue.co\/profile\/vuenewsletter\">Vue.js Newsltter<\/a><\/li>\n<li><a href=\"https:\/\/webmastah.pl\/weekly\">webMASTAH.weekly<\/a> In Polish<\/li>\n<\/ol>\n<p>If you are subscribing other interesting newsletters related to front-end development, let me know in comments below.<\/p>\n",
+    "excerpt": "I&#8217;m that type of person who loves to have organized inbox and a fan of &#8220;inbox zero&#8221; rule. But I have so much other things to do and I&#8217;m lazy. Now I have about 200 unread emails with tech newsletters&#8230; Time to fix that! Why read tech newsletters? Most of tech newsletters provide an easy way to get<\/p><p><a class=\"view-article\" href=\"https:\/\/iglo.tech\/tech-newsletters-vs-lack-of-time\/\">Read more<\/a><\/p>",
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "comment_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "_links": {
+        "self": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/106"
+        }],
+        "collection": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/"
+        }],
+        "about": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/types\/"
+        }],
+        "author": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/users\/1"
+        }],
+        "replies": [{
+            "embeddable": true,
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/comments?post=106"
+        }],
+        "version-history": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/headless\/v1\/106\/revisions"
+        }],
+        "wp:attachment": [{
+            "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/media?parent=106"
+        }],
+        "wp:term": [{
+                "taxonomy": "category",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/categories?post=106"
+            },
+            {
+                "taxonomy": "post_tag",
+                "embeddable": true,
+                "href": "https:\/\/iglo.tech\/wp-json\/wp\/v2\/tags?post=106"
+            }
+        ],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}

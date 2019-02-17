@@ -1,0 +1,6 @@
+{
+  "collectionName": "post",
+  "filter": {
+    "sortBy": "content.date"
+  }
+}
