@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "*.js", "use": "@now/node" }
+    ],
+    "routes": [
+        { "src": "/entity", "dest": "/entity.js" },
+        { "src": "/collection", "dest": "/collection.js" }
+    ]
+}
